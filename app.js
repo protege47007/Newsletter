@@ -67,7 +67,7 @@ app.post('/failure', (req, res) => {
     res.redirect('/');
 });
 
-app.listen(3030, () => {
+app.listen(process.env.PORT || 3030, () => {
     console.log("Life is good! And all seems well...");
 })
 
